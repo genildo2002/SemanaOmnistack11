@@ -8,9 +8,10 @@ module.exports  = {
         return response.json(ongs);
     },
     async create(request,response) {
-        const { name, email, whatsup, city, uf } = request.body;      // Acessando os route params    
+        const { name, email, whatsup, city, uf } = request.body;      // Acessando os route params
         const id = crypto.randomBytes(4).toString('HEX');
-        console.log(id);                // http://localhost:3333/users/1
+        //console.log({name,email,whatsup,city,uf});                // http://localhost:3333/users/1
+        //console.log(id);                // http://localhost:3333/users/1
         await connection('ongs').insert({
             id,
             name,
@@ -34,5 +35,5 @@ module.exports  = {
         await connection('ongs').where('id',id).delete();
         return response.status(204).send(); //enviar resposta sem conteúdo
 
-    }    
+    }
 };
