@@ -1,0 +1,7 @@
+Bibliotecas:
+Express - Framewordk utilizado dentro do node nesta aplicação
+Celebrate ( npm install celebrate) - Usada parafazer validações nas regras
+Link: https://github.com/arbc/elebrate
+
+Servidores para deploy:
+Para teste simples do node: herokuapp.com

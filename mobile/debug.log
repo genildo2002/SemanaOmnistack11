@@ -1,0 +1,2 @@
+[0329/000158.384:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0329/000158.444:ERROR:exception_snapshot_win.cc(98)] thread ID 5168 not found in process
